@@ -23,20 +23,15 @@ public class Relogio {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-
             segundos++;
-
+            
             if (segundos == 60) {
                 segundos = 0;
                 minutos++;
-            }
-
-            if (minutos == 60) {
+            }else if (minutos == 60) {
                 minutos = 0;
                 horas++;
-            }
-
-            if (horas == 24) {
+            }else if (horas == 24) {
                 horas = 0;
             }
 
